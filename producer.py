@@ -3,10 +3,10 @@ from tweepy import OAuthHandler, Stream
 from kafka import KafkaProducer
 
 
-access_token= "1057305579121713152-yydhlFYRwnXUvj9XtHzyYpOAuoTT2J"
-access_token_secret = "9PolB0nXPWA6Y6j5kYdpzqIKgIyE1lA1RIxKeKXZnIBcJ"
-consumer_key = "ow7stEAStsyNDqc5u51YphqDc"
-consumer_secret = "2HMj5hQ0M1GPvocsgCl3skFwUvRDn8A91Pi4FGi2fHGEhqMbVk"
+access_token= ""
+access_token_secret = ""
+consumer_key = ""
+consumer_secret = ""
 
 
 producer = KafkaProducer(bootstrap_servers=['localhost:9092'])
