@@ -9,6 +9,7 @@ consumer_key = ""
 consumer_secret = ""
 
 
+
 producer = KafkaProducer(bootstrap_servers=['localhost:9092'])
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -23,4 +24,4 @@ class StdOutListener(StreamListener):
 
 listener= StdOutListener()
 stream = Stream(auth, listener)
-stream.filter(track="BBNaijaLockdown")
+stream.filter(track="BBNaija")
